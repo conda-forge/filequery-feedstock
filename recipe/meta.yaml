@@ -1,5 +1,5 @@
 {% set name = "filequery" %}
-{% set version = "0.2.2" %}
+{% set version = "0.2.3" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/filequery-{{ version }}.tar.gz
-  sha256: 3535d1211067853b521cebef5900a0b34cd55adc8ac36a6a8e7af0036948f679
+  sha256: df6ffccfe53a2b36b9622fdde29bd91069fe7dd0872c53d23b33d03993630fc3
 
 build:
   entry_points:
