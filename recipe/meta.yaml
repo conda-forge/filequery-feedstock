@@ -1,5 +1,5 @@
 {% set name = "filequery" %}
-{% set version = "0.2.3" %}
+{% set version = "0.2.4" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/filequery-{{ version }}.tar.gz
-  sha256: df6ffccfe53a2b36b9622fdde29bd91069fe7dd0872c53d23b33d03993630fc3
+  sha256: 4e70ea4e825b86a10213340a3b1d13c4539ec3d900886ae113ac730e5cad24e0
 
 build:
   entry_points:
@@ -24,9 +24,9 @@ requirements:
     - pip
   run:
     - python >=3.8
-    - python-duckdb ==0.9.1
+    - python-duckdb ==0.10.0
     - importlib-metadata ==6.8.0
-    - linkify-it-py >=2.0.2
+    - linkify-it-py ==2.0.2
     - markdown-it-py ==3.0.0
     - mdit-py-plugins ==0.4.0
     - mdurl >=0.1.2
@@ -34,7 +34,7 @@ requirements:
     - numpy >=1.26.1
     - pygments ==2.16.1
     - rich ==13.6.0
-    - textual ==0.41.0
+    - textual ==0.47.1
     - tree_sitter ==0.20.2
     - tree_sitter_languages ==1.8.0
     - typing-extensions ==4.8.0
